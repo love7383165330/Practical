@@ -6,7 +6,7 @@ int main()
 
 // create telecom call service conversation scenario using nested switch case.
 
-  int call_for;
+  int call_for, purchase;
 	
 	
     printf("\n Call For : ");
@@ -19,12 +19,41 @@ int main()
 	
     switch(call_for)
     {
-        case 1: printf(" dial + 1234567891  number for purchasing new product \n");
+        case 1: 
+		        printf(" you have selected to purchasing new product \n");
+                printf(" Press '1' to Purchase Electronic Products \n");
+                printf(" Press '2' to Purchase Clothes \n");
+                printf(" Press '3' to Purchase Kitchen Products \n");
+				scanf("%d", &purchase);
+				
+				switch (purchase)
+				{
+					case 1 :
+					printf("dial + 2541369787  number to purchase Electronic Product \n");
+					break;
+					
+					case 2 :
+					printf("dial + 5369841207  number to Purchase Clothes Product \n");
+					break;
+					
+					case 3 :
+					printf("dial + 6552148973  number to Kitchen Product \n");
+					break;
+					
+					default :
+					printf ("invalid");
+					break;
+					
+				}
+				
                 break;
+				
         case 2: printf("dial + 5214897631  number for Returening purchased product \n");
                 break;
+				
         case 3: printf("dial + 7954123684  number for Cancle the product \n");
                 break; 
+				
 	    case 4: printf("dial + 3456951278  number for Other Help \n");
                 break;
       
