@@ -83,10 +83,22 @@ int main()
 				{
                 printf("%d is the largest number. \n", B2);
 				}
+				else
+				{
+	           printf("%d is the largest number. \n", D2);
+
+				}
 			}
 			else
 			{
-                printf("%d is the largest number. \n", D2);
+              if(C2 >= D2)
+		        {
+                    printf("%d is the largest number. \n", C2);
+		        }
+              else
+			   {
+                     printf("%d is the largest number. \n", D2);
+			   }
             }
 			
   // Find Max. From given 5 No. Using Using nested if else.
@@ -129,7 +141,14 @@ int main()
 		   }
            else
 			{
-           printf("%d is the largest number. \n", D3);
+              if(D2 >= E2)
+		        {
+                    printf("%d is the largest number. \n", D2);
+		        }
+              else
+			   {
+                     printf("%d is the largest number. \n", E2);
+			   }
 			}
         }
 	}
@@ -150,8 +169,30 @@ int main()
 			}
 			else
 			{
-                printf("%d is the largest number. \n", D3);
-            }
+               if( C3 >= D3)
+				{
+			        if( C3 >= E3)
+			        {
+			           printf("%d is the largest number. \n", C3);
+			         }
+			        else
+			        {
+                       printf("%d is the largest number. \n", E3);
+			        }
+				}   
+
+                else	
+				{
+					 if(D2 >= E2)
+		             {
+                    printf("%d is the largest number. \n", D2);
+		            }
+                    else
+			          {
+                     printf("%d is the largest number. \n", E2);
+			           }
+				}					
+		    }
 			
   
 
