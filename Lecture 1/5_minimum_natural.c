@@ -3,22 +3,24 @@
 int main()
 {
 	
-// Minimum Number 	
+
+//************ Minimum Number ************	
 	
-int a= 15 , b = 10 ;
+int a= 1 , b = 10 ;
 
 if(a<b)
 {
-	printf("a is Smaller-then b");
+	printf("a is Smaller");
 }
 else
 {
-	printf("b is Greater-then a");
+	printf("b is Smaller");
 }
 
+//Output :-   a is smalller
 
-// Natural Number 
 
+//************ Natural Number ************	
 
 int c;
 
@@ -29,7 +31,7 @@ if (c < 0)
 {
 printf("%d is Not Natural Number",c);
 }
-else if(a == 0)
+else if(c == 0)
 {
 printf("%d is Not Natural Number",c);
 }
@@ -37,6 +39,12 @@ else
 {
 printf("%d is Natural Number",c);
 }
+
+
+// Output :- 
+
+// Enter The Number :50
+// 50 is Natural Number
 
 return 0;
 
