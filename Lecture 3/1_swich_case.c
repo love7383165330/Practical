@@ -109,7 +109,7 @@ int main()
         default : printf("invalid number");
     }
 
-
+return 0;
 }
 
 
