@@ -12,43 +12,44 @@ int main()
      
     printf("Largest number between %d and %d is %d. \n", A, B, max);
  
-   
-
-
-// Find Max. From given 3 No. Using Using nested if else.
+   // Output :- Largest number between 5 and 10 is 10. 
 
 
 
-    int A1 = 12, B1 = 33, C1 = 15;
+// Find Min. From given 3 No. Using Using nested if else.
+
+
+ int A1 = 512, B1 = 33, C1 = 15;
  
  
-    if (A1 >= B1) {
-        if (A1 >= C1)
+    if (A1 <= B1) {
+        if (A1 <= C1)
 		{
-            printf("%d is the largest number. \n", A1);
+            printf("%d is the Smallest number. \n", A1);
 		}
         else
 		{
-            printf("%d is the largest number.\n", C1);
+            printf("%d is the Smallest number.\n", C1);
 		}
     }
     else {
-        if (B1 >= C1)
+        if (B1 <= C1)
 		{
-            printf("%d is the largest number.\n", B1);
+            printf("%d is the Smallest number.\n", B1);
 		}
         else
 		{
-            printf("%d is the largest number.\n", C1);
+            printf("%d is the Smallest number.\n", C1);
 		}
     }
- 
+	
+	//Output :- 15 is the Smallest number
  
  
  // Find Max. From given 4 No. Using Using nested if else.
  
  
-     int A2 = 56, B2 = 41, C2 = 80, D2 = 75;
+      int A2 = 56, B2 = 41, C2 = 80, D2 = 75;
    
     if (A2 >= B2)
     {
@@ -101,100 +102,128 @@ int main()
 			   }
             }
 			
-  // Find Max. From given 5 No. Using Using nested if else.
+			
+			// Output :- 80 is the largest number. 
+			
+  // Find Min. From given 5 No. Using Using nested if else.
  
- 
-     int A3 = 56, B3 = 41, C3 = 80, D3 = 75, E3 = 157;
+
+  
+     int A3 = 55, B3 = 90, C3 = 70, D3 = 5, E3 = 10;
    
-    if (A3 >= B3)
+    if (A3 <= B3)
     {
-        if(A3 >= C3)
+        if(A3 <= C3)
         {
-            if( A3 >= D3)
+            if( A3 <= D3)
 			{
-              if( A3 >= E3)
+              if( A3 <= E3)
 			  {
-			  printf("%d is the largest number. \n", A3);
+			  printf("%d is the Smallest number. \n", A3);
 			  }
 			  else
 			  {
-              printf("%d is the largest number. \n", E3);
+              printf("%d is the Smallest number. \n", E3);
 			  }
 			}
             else
 			{
-              printf("%d is the largest number. \n", D3);
+			    if(D3<= E3)
+			    {
+                     printf("%d is the Smallest number. \n", D3);
+			    }
+			    else
+			    {
+			         printf("%d is the Smallest number. \n", E3);
+			    }
 			}
         }
         else
         {
-           if(C3 >= D3)
+           if(C3 <= D3)
 		   {
-			  if( C3 >= E3)
+			  if( C3 <= E3)
 			  {
-			  printf("%d is the largest number. \n", C3);
+			  printf("%d is the Smallest number. \n", C3);
 			  }
 			  else
 			  {
-              printf("%d is the largest number. \n", E3);
+              printf("%d is the Smallest number. \n", E3);
 			  }
 		   }
            else
 			{
-              if(D2 >= E2)
+              if(D3 <= E3)
 		        {
-                    printf("%d is the largest number. \n", D2);
+                    printf("%d is the Smallest number. \n", D3);
 		        }
               else
 			   {
-                     printf("%d is the largest number. \n", E2);
+                     printf("%d is the Smallest number. \n", E3);
 			   }
 			}
         }
 	}
         else
-            if(B3 >= C3)
+            if(B3 <= C3)
             {
-                if( B3 >= D3)
+                if( B3 <= D3)
 				{
-			        if( B3 >= E3)
+			        if( B3 <= E3)
 			        {
-			           printf("%d is the largest number. \n", B3);
+			           printf("%d is the Smallest number. \n", B3);
 			         }
 			        else
 			        {
-                       printf("%d is the largest number. \n", E3);
+                       printf("%d is the Smallest number. \n", E3);
 			        }
 				}
+			        else 
+			        {
+			          if(D3 <= E3)
+		               {
+                    printf("%d is the Smallest number. \n", D3);
+		                   }
+                         else
+                            {
+                     printf("%d is the Smallest number. \n", E3);
+			             }
+			        }
+				
 			}
 			else
 			{
-               if( C3 >= D3)
+               if( C3 <= D3)
 				{
-			        if( C3 >= E3)
+			        if( C3 <= E3)
 			        {
-			           printf("%d is the largest number. \n", C3);
+			           printf("%d is the Smallest number. \n", C3);
 			         }
 			        else
 			        {
-                       printf("%d is the largest number. \n", E3);
+                       printf("%d is the Smallest number. \n", E3);
 			        }
 				}   
 
                 else	
 				{
-					 if(D2 >= E2)
+					 if(D3 <= E3)
 		             {
-                    printf("%d is the largest number. \n", D2);
-		            }
+                        printf("%d is the Smallest number. \n", D3);
+		             }
                     else
 			          {
-                     printf("%d is the largest number. \n", E2);
-			           }
+                         printf("%d is the Smallest number. \n", E3);
+			          }
 				}					
 		    }
 			
+			
+			// Output :- 5 is the Smallest number. 
   
+
+
+
 
   // Find Max. From given 3 No. Using Ternary Operator.
 
@@ -204,6 +233,10 @@ int main()
      
     printf("Largest number among %d, %d and %d is %d.\n", A4, B4, C4, max1);
  
+    // output:- Largest number among 25, 80 and 22 is 80.
+
+
+
 
  
   // Find Max. From given 4 No. Using Ternary Operator.
@@ -215,6 +248,12 @@ int main()
      
     printf("Largest number among %d, %d, %d and %d is %d.\n", A5, B5, C5, D5, max2);
 
+// output :- Largest number among 65, 70, 35 and 140 is 140.
+
+
+
+
+
 
   // Find Max. From given 5 No. Using Ternary Operator.
 
@@ -225,7 +264,7 @@ int main()
      
     printf("Largest number among %d, %d, %d ,%d and %d is %d.\n", A6, B6, C6, D6, E6, max3);
 
-
+// output :-Largest number among 5, 20, 55 ,5650 and 65 is 5650.
 
     return 0;
 
