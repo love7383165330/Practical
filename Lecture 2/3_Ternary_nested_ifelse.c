@@ -22,7 +22,8 @@ int main()
  int A1 = 512, B1 = 33, C1 = 15;
  
  
-    if (A1 <= B1) {
+    if (A1 <= B1) 
+	{
         if (A1 <= C1)
 		{
             printf("%d is the Smallest number. \n", A1);
@@ -32,7 +33,8 @@ int main()
             printf("%d is the Smallest number.\n", C1);
 		}
     }
-    else {
+    else
+	{
         if (B1 <= C1)
 		{
             printf("%d is the Smallest number.\n", B1);
